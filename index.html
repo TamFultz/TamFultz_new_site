@@ -9,6 +9,11 @@
     <meta name="description" content="Home page of Tamara Fultz, a metadata-cataloger librarian, in an art museum library. Skills/Knowledge: HTML5, CSS3, XML,
     RDA, MODS, TEI" >
     <link rel="icon" type="image/ico" href="Tamicon.ico">
+    <script src="modernizr.min.js" type="text/javascript">
+      article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+        display: block;
+       }
+    </script>
     <style media="screen">
     body {
       background: url(images/AppDubrov.jpg);
@@ -23,56 +28,73 @@
 
 <body id="home">
 
-<header>
-    <h1>Tamara Lee Fultz</h1>
-</header>
+  <header>
+      <h1>Tamara Lee Fultz</h1>
+      <nav>
+          <ul>
+              <li>Home</li>
+              <li><a href="Resume.html">Resume</a></li>
+              <li><a href="Blog.html">Blog</a></li>
+              <li><a href="WebDevelopmentLinks.html">Web Development Links</a></li>
+              <li><a href="MetadataLinks.html">Metadata  Links</a></li>
+          </ul>
+      </nav>
+  </header>
 
-<div>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li><a href="Resume.html">Resume</a></li>
-            <li><a href="Blog.html">Blog</a></li>
-            <li><a href="WebDevelopmentLinks.html">Web Development Links</a></li>
-            <li><a href="MetadataLinks.html">Metadata  Links</a></li>
-        </ul>
-    </nav>
-</div>
+  <section id="todays-video">
+    <h3>
+      Video Of The Day
+    </h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/R2nCN4rhlFw" frameborder="0" allowfullscreen></iframe>
+  </section>
 
-<div id="about">
-    <h3>ABOUT ME</h3>
+  <section id="todays-music">
+    <h3>Music Of The Day</h3>
+    <iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://www.reverbnation.com/widget_code/html_widget/artist_190097?widget_id=55&pwc[song_ids]=20129847&context_type=song&spoid=fan_5364081&pwc[size]=small" style="width:0px;min-width:100%;max-width:100%;"></iframe>
+  </section>
+
+  <section id="cat-table">
+    <h3>Household Inhabitants</h3>
+    <table>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Temperment</th>
+    </tr>
+    <tr>
+      <td>Leon</td>
+      <td>Tuxedo cat</td>
+      <td>chill dude</td>
+    </tr>
+    <tr>
+      <td>Diego</td>
+      <td>Orange bobtail</td>
+      <td>neurotic loverboy</td>
+    </tr>
+
+  </table>
+</section>
+
+<section id="comment-form">
+  <h3>Comment Form</h3>
+  <form action="index.html" method="post">
     <p>
-        I am a museum librarian knowledgable about metadata and experienced in complex cataloging. I love everything in regards to art, literature, and the obscure. I
-        share an abode with the ever-enigmatic <a target="_blank" href="http://darkbloomiana.tumblr.com/">Vivian Darkbloom</a> and two neurotic cats, Leon and Diego
-        (named after the bestfriends, Leon Trotsky and Diego Rivera).
+      If you wish to send me comments type in your first and last name, say a few words in the comment box, and click on submit.<br>
+      First name: <input type="text" name="firstname" placeholder="Forename" required><br>
+      Last name: <input type="text" name="lastname" placeholder="Surname" required ><br>
+      Comments: <br>
+      <textarea name="comments" rows="8" cols="40" placeholder="Put your comments here!"></textarea>
     </p>
-</div>
+    <p>
+    <input type="submit">
+    </p>
 
-<div>
-  <table>
-  <tr>
-    <th>Name</th>
-    <th>Kind</th>
-    <th>Temperment</th>
-  </tr>
-  <tr>
-    <td>Leon</td>
-    <td>Tuxedo cat</td>
-    <td>chill dude</td>
-  </tr>
-  <tr>
-    <td>Diego</td>
-    <td>Orange bobtail</td>
-    <td>neurotic loverboy</td>
-  </tr>
+  </form>
+</section>
 
-</table>
-
-</div>
-
-<footer id="homes">
-        &copy; 2016 Tamara Lee Fultz. All rights reserved.<br>
-</footer>
+  <footer id="homes">
+          &copy; 2016 Tamara Lee Fultz. All rights reserved.<br>
+  </footer>
 
 </body>
 </html>
