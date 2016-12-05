@@ -1,0 +1,74 @@
+body {
+  background-color: #333333;
+  font-family: 'Prata', serif;
+  color:#B3B3B3;
+}
+
+/* Give Shadow to Header H1 */
+
+header h1 {
+    text-shadow: 2px 2px 10px;
+}
+
+/* Navigation bar */
+
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #666666;
+}
+
+.topnav li {
+    float: left;
+}
+
+.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.topnav li a:hover {
+    background-color:#4C4C4C;
+}
+
+/* Table with Borders */
+
+table, th, td {
+   border: 1px solid black;
+}
+
+/* Give table padding */
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+/* Make Cat table headers black */
+
+#cat-table th {
+  color: black;
+}
+
+/* Make border for comment form */
+
+#comment-form form {
+  border: 1px solid black;
+}
+
+/* Give form padding */
+
+#comment-form form {
+  padding: 10px;
+}
+
+#comment-form p, input, textarea {
+    padding: 1px;
+    text-align: left;
+}
