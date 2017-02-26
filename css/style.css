@@ -148,7 +148,7 @@ section {
 
 #social {
   position: fixed;
-  top: 185px;
+  top: 200px;
   right: 20px;
   width: 40px;
   z-index: 2;
@@ -163,7 +163,7 @@ section {
   overflow: hidden;
 }
 
-a.fbook, a.twit, a.gplus {
+a.fbook, a.twit, a.gplus, a.tblr {
   background: url(../images/social-icons.png) no-repeat;
 }
 
@@ -178,3 +178,7 @@ a.twit:active { background-position: -80px -40px; }
 a.gplus { background-position: 0 -80px; }
 a.gplus:hover { background-position: -40px -80px; }
 a.gplus:active { background-position: -80px -80px; }
+
+a.tblr { background-position: 0 -120px; }
+a.tblr:hover { background-position: -40px -120px; }
+a.tblr:active { background-position: -80px -120px; }
