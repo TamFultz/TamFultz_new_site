@@ -158,14 +158,29 @@ img, video, audio {
   max-width: 100%;
 }
 
-
-/* //////// LAYOUT ///////// */
+/*////////// FIXES //////////*/
 
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+.clear {
+  clear:both;
+}
+
+
+/* //////// LAYOUT ///////// */
 
 .wrapper {
   width: 960px;
@@ -182,15 +197,6 @@ img, video, audio {
   width: 64%;
 }
 
-.clearfix::after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  height: 0;
-  line-height: 0;
-}
-
 [class*="col-"] {
   margin-left: 2%;
 }
@@ -202,7 +208,7 @@ img, video, audio {
 /* //////// SECTIONS ///////// */
 
 header {
-  margin: 0 0 30px;
+  margin: 0 0 20px;
 }
 
 section {
@@ -252,7 +258,7 @@ a.tblr:active { background-position: -80px -120px; }
 /*////////// LOGO //////////*/
 
 #logo {
-  padding: 84px 0 0;
+  padding: 20px 5px 5px;
 }
 
 #logo h1 {
