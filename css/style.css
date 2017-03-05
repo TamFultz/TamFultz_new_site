@@ -1,5 +1,23 @@
 /*////////// GLOBAL //////////*/
 
+body {
+  padding-top: 200px;
+  background-color: #333333;
+  font-family: 'Prata', serif;
+  color:#B3B3B3;
+}
+
+a:link {
+  color:#B0854D;
+  text-decoration: none;
+}
+
+a:visited {
+  color:#49732C;
+  text-decoration: none;
+}
+
+
 h3 {
   margin: 0 0 10px;
 }
@@ -34,11 +52,16 @@ figcaption {
   padding-right: 30px;
 }
 
-body {
-  padding-top: 200px;
-  background-color: #333333;
-  font-family: 'Prata', serif;
-  color:#B3B3B3;
+.snazzyquote {
+  line-height: 1.9em;
+  font-style: italic;
+  color: black;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  background-color:#B2A1A1;
+  padding: 25px;
+  margin: 30px;
 }
 
 /*////////// BACKGROUNDS //////////*/
