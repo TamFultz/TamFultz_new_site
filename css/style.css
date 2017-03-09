@@ -28,6 +28,10 @@ p {
   line-height: 1.5em;
 }
 
+em {
+  text-decoration: none;
+}
+
 figure {
   margin: 0 0 10px;
 }
