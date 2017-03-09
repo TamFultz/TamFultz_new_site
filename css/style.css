@@ -20,6 +20,7 @@ a:visited {
 
 h3 {
   margin: 0 0 10px;
+  color: #B2A48F;
 }
 
 p {
@@ -52,6 +53,8 @@ figcaption {
   padding-right: 30px;
 }
 
+/*////////// BLOG ////////*/
+
 .snazzyquote {
   line-height: 1.9em;
   font-style: italic;
@@ -63,6 +66,36 @@ figcaption {
   padding: 25px;
   margin: 30px;
 }
+
+/*/////////// RESUME ///////////*/
+
+.resume-part {
+  border-color: black;
+  border-width: 1px;
+  border-style: hidden;
+  padding: 10px;
+  margin: 15px;
+}
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+}
+
+.skills {
+    text-align: right; /* Right-align text */
+    padding-right: 20px; /* Add some right padding */
+    line-height: 40px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
+    color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #4CAF50;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
 
 /*////////// BACKGROUNDS //////////*/
 
