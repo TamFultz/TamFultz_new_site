@@ -23,6 +23,10 @@ h3 {
   color: #B2A48F;
 }
 
+li {
+  padding: .5em;
+}
+
 p {
   font-size: 1em; /* 16px, ?pt, 100%, 1em */
   line-height: 1.5em;
