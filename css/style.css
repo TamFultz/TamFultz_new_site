@@ -321,16 +321,27 @@ a.tblr:active { background-position: -80px -120px; }
 
 /*////////// LOGO //////////*/
 
+#headerlogo {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid #ccc;
+}
+
 #logo {
-  padding: 20px 5px 5px;
+  padding: 10px 5px 5px;
 }
 
 #logo h1 {
   margin: 0;
+  color: #B2A48F;
 }
 
 #logo h2 {
   margin: 0;
+  color: #B2A48F;
 }
 
 /*////////// FOOTER //////////*/
