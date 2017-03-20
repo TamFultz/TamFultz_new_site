@@ -262,7 +262,7 @@ img, video, audio {
 
 .col-2 {
   float: left;
-  width: 64%;
+  width: 66%;
 }
 
 [class*="col-"] {
@@ -327,7 +327,7 @@ a.tblr:active { background-position: -80px -120px; }
 
 #headerlogo {
   position: fixed;
-  top: 60px;
+  top: 65px;
   left: 0;
   width: 100%;
   z-index: 2;
@@ -336,6 +336,7 @@ a.tblr:active { background-position: -80px -120px; }
 
 #logo {
   padding: 10px 5px 5px;
+  text-align: center;
 }
 
 #logo h1 {
