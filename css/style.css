@@ -37,13 +37,13 @@ em {
 }
 
 figure {
-  margin: 0 0 10px;
+  margin: 0 0 5px;
 }
 
 figcaption {
   font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive;
   color: #777;
-  text-align: right;
+  text-align: center;;
 }
 
 img {
@@ -177,12 +177,9 @@ img {
   background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(71,71,71,1) 28%,rgba(81,81,81,1) 35%,rgba(71,71,71,1) 72%,rgba(43,43,43,1) 87%,rgba(28,28,28,1) 91%,rgba(0,0,0,1) 100%); /* W3C */
 }
 
-/* /////// ABOUT ME WITH BORDERS /////// */
+/* /////// ABOUT ME WITHOUT BORDERS /////// */
 
-#about {
-  border: 1px solid;
-  clear: both;
-}
+
 
 /* /////// CAT TABLE WITH BORDERS ////// */
 
@@ -204,6 +201,10 @@ th, td {
 }
 
 /* ///////// COMMENT FORM WITH BORDERS ///////// */
+
+#comment-form {
+  width: 60%;
+}
 
 #comment-form form {
   border: 1px solid;
@@ -243,10 +244,9 @@ img, video, audio {
   line-height: 0;
 }
 
-.clear {
+.clearfix {
   clear:both;
 }
-
 
 /* //////// LAYOUT ///////// */
 
@@ -256,13 +256,13 @@ img, video, audio {
 }
 
 .col-1 {
-  float: right;
-  width: 32%;
+  float: left;
+  width: 64%;
 }
 
 .col-2 {
-  float: left;
-  width: 66%;
+  float: right;
+  width: 30%;
 }
 
 [class*="col-"] {
@@ -299,7 +299,7 @@ section {
   width: 40px;
   height: 40px;
   text-indent: 100%;
-  white-space: no-wrap;
+  white-space: nowrap;
   overflow: hidden;
 }
 
