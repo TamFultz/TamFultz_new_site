@@ -1,0 +1,76 @@
+img, form, input, table, video, audio, iframe {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 1040px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  #social {
+    position: absolute;
+    top: 100px;
+    right: 4%;
+    width: auto;
+    z-index: 3;
+  }
+
+  #social a {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    font-size: 85%;
+  }
+
+  #logo h1 {
+    height: 35px;
+  }
+
+  #logo h2 {
+    font-size: 1.25em;
+  }
+
+  #social {
+    top: 95px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #navbar nav a {
+    font-size: 0.9em;
+}
+
+  .col-1, .col-2 {
+    width: 100%;
+    margin-left: 0;
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #navbar nav a {
+    display: none;
+  }
+
+  #navbar nav a.menu-icon {
+    display: block;
+    float: right;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    width: auto;
+  }
+
+  #social {
+    top: 90px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #logo h2 {
+    visibility: hidden;
+  }
+}

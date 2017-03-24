@@ -3,6 +3,7 @@
 body {
   padding-top: 200px;
   background-color: #333333;
+  font-size: 100%;
   font-family: 'Prata', serif;
   color:#B3B3B3;
 }
@@ -17,9 +18,17 @@ a:visited {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
 
 h3 {
-  margin: 0 0 10px;
+  font-size: 1.7em;
+  margin: 0 0 5px;
   color: #B2A48F;
 }
 
@@ -177,6 +186,10 @@ img {
   background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(71,71,71,1) 28%,rgba(81,81,81,1) 35%,rgba(71,71,71,1) 72%,rgba(43,43,43,1) 87%,rgba(28,28,28,1) 91%,rgba(0,0,0,1) 100%); /* W3C */
 }
 
+#navbar nav a.menu-icon {
+  display: none;
+}
+
 /* /////// CAT TABLE WITH BORDERS ////// */
 
 table, th, td {
@@ -199,7 +212,7 @@ th, td {
 /* ///////// COMMENT FORM WITH BORDERS ///////// */
 
 #comment-form {
-  width: 60%;
+  width: 30%;
 }
 
 #comment-form form {
@@ -326,7 +339,7 @@ a.tblr:active { background-position: -80px -120px; }
 
 #logo {
   padding: 10px 5px 5px;
-  text-align: center;
+  text-align: left;
 }
 
 #logo h1 {
