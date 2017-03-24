@@ -193,7 +193,7 @@ th, td {
 /* Make Cat table headers black */
 
 #cat-table th {
-  
+
 }
 
 /* ///////// COMMENT FORM WITH BORDERS ///////// */
@@ -215,12 +215,6 @@ th, td {
 #comment-form p, input, textarea {
     padding: 1px;
     text-align: left;
-}
-
-/* //////// MEDIA ///////// */
-
-img, video, audio {
-  max-width: 100%;
 }
 
 /*////////// FIXES //////////*/
@@ -353,4 +347,11 @@ footer {
   padding: 10px;
   border-top: 1px solid;
   clear: right;
+}
+
+/*///////// MEDIA QUERIES ////////*/
+
+img, form, input, table, video, audio, iframe {
+  width: 100%;
+  max-width: 100%;
 }
