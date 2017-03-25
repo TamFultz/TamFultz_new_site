@@ -52,7 +52,7 @@ figure {
 figcaption {
   font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive;
   color: #777;
-  text-align: center;;
+  text-align: center;
 }
 
 img {
@@ -114,9 +114,15 @@ img {
     color: white; /* White text color */
 }
 
-.html {width: 90%; background-color: #4CAF50;} /* Green */
-.css {width: 80%; background-color: #2196F3;} /* Blue */
-.js {width: 65%; background-color: #f44336;} /* Red */
+.html {width: 90%; background-color: #5E7582;}
+.css {width: 80%; background-color: #5E7596;}
+.js {width: 65%; background-color: #A28B96;}
+
+.greek {width: 25%; background-color: #B5C9FC}
+.french {width: 30%; background-color: #B5C966;}
+.german {width: 90%; background-color: #B58666;}
+.italian {width: 90%; background-color: #AE8CD4;}
+.latin {width: 85%; background-color: #AE8C4F;}
 
 /*////////// BACKGROUNDS //////////*/
 
