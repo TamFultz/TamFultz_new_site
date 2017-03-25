@@ -203,10 +203,16 @@ th, td {
     text-align: left;
 }
 
-/* Make Cat table headers black */
+/* Give table headers color */
 
 #cat-table th {
+  background-color: #3B4A3F;
+}
 
+/* Give table rows color */
+
+.cellcolor {
+  background-color: #5E7564;
 }
 
 /* ///////// COMMENT FORM WITH BORDERS ///////// */
