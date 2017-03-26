@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <script src="js/modernizr-custom.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 </head>
 
 <body>
@@ -47,6 +47,44 @@
 
   <div class="wrapper clearfix">
     <section id="blogposts" class="col-1 first">
+
+      <article class="blogpost">
+        <header>
+          <h3>Building A Responsive Website</h3>
+          <p>Posted by Tamara Fultz on <time datetime="2017-03-25">March 25, 2017</time>.</p>
+        </header>
+        <p>	For my final project in the <a href="https://flatironschool.com/">Flatiron School</a>’s <a href="https://flatironschool.com/programs/online-html-css-certificate-course/">Building Responsive Websites with HTML & CSS</a>, I decided to build a personal portfolio <a href="https://tamfultz.github.io/TamFultz_new_site/">website</a> - admittedly not a singularly exciting idea, but useful in terms of my own career development. It was to have six pages: a home or “about” page, a blog page, a resume page, a page for metadata / linked data resources, a photo gallery (not yet operational), and finally a media page which is basically being used to exhibit a number of multimedia and random assignments from the class.</p>
+        <p>	The structure is fairly simple: at top in the header is a navigation bar and below it a “logo” bar with my name, the layout for the body consists of two columns with the one on the left taking up 2/3s of the space and the other column on the right taking up 1/3 of the space, social icons are located in a fixed position on the right, and at bottom of the page is a footer with copyright information.</p>
+        <p>	I confess that when it came to the initial planning I really only worked from an outline and throughout the semester I used a To-Do list to mark off my progress on the pages and special features that I intended on adding. If had been creating a more complex site I certainly would have used wireframing tools like <a href="https://balsamiq.com/">Balsamiq</a> or <a href="https://gomockingbird.com/home">Mockingbird</a>.</p>
+        <p>	So let’s discuss my site: the easiest way is probably to walk you through the HTML code on my index page, briefly talk of the other pages, and then walk you through the two CSS pages. I will end with a succinct paragraph on what I liked and disliked about the course and the coding. </p>
+        <br>
+        <p><img src="images/TamFultzHeader.jpg"></p>
+        <br>
+        <p>	The image above shows the head element used on all the pages: clearly HTML5 compliant.  The first two <b>link</b> elements are to the <a href="https://fonts.google.com/">Google Font</a> fonts that I used.  The next link is to a minimized file of normalize CSS that you can get at the <a href="https://cdnjs.com/libraries/normalize">cdnjs</a> site: this small CSS file helps browsers render elements more consistently and in line with current standards.  The following link is to my regular CSS style sheet and the link after that to my CSS stylesheet with the media queries.  The <b>script</b> element gives access to a customized Modernizr file: <a href="https://modernizr.com/download?setclasses">Modernizr</a> helps you to build and download a Javascript file that will detect HTML5 and CSS3 features in browsers, which allows the JavaScript to avoid using unimplemented features or has it employ a workaround to use them. Finally, the <b>meta</b> viewport element: the <b>width=device-width</b> part sets the screen width to that of the device  and the <b>initial-scale=1.0</b> sets the initial zoom level when the page is first loaded by the browser.  The <b>minimum-scale=1.0, maximum-scale=1.0</b> prevents the devices from zooming in or out  and instead rely on the media query styling to change the layout .</p>
+        <p>	The next section of code on my index page is the body with the social icons code positioned at the top: I will be talking more about them when I get to my CSS page, but the links all go to 4 of my social media pages.  The next section is a <b>header</b> element with my “logo” and navigation bar.  I don’t have much to say about the HTML code in these, but that initially I had my navbar set up as an unordered list, but when it came to styling it I had some problems, so instead set it so they could display inline-block. This was much easier and was well-explained in the code along exercise.  Each pages has various <b>section</b> elements for the page’s content. Finally, every page has a <b>footer</b> element with a copyright statement at the bottom.</p>
+        <p>	My <b>style.css</b> page has all the general style code for the pages. I must confess that I felt a bit overwhelmed by this stylesheet: as we went along in the exercises I kept adding and taking away from it and I got a bit confused. I recognize that this is one area where good planning in the beginning would have made it easier.  The first section has all my global styles: I wonder if some of them are necessary, but I wanted to be overly cautious in not ignoring some elements. I honestly wish I could tell you while every line is there, but I have long since forgotten… this is why commenting is so important. Lesson learned!  </p>
+        <p>	The <b>blog</b> section has the style for my <b>snazzyquote</b> class (<a href="https://css-tricks.com/the-difference-between-id-and-class/">class, not an id</a>, because I intend to have a quotation in every book review post). I thought it was important to elegantly style these quotes so they were patently set out from the text and they certainly break up the monotony of the text! </p>
+        <p>	The <b>resume</b> section has style for the <b>resume-part</b> class:  these are standard resume parts that I wanted to keep very formal. Then I saw some really cool <a href="https://www.w3schools.com/howto/howto_css_skill_bar.asp">skill bars</a> on some people’s resumes and I Googled to get the style for that.  Hence the <b>skills</b> class: I think the background colors add some liveliness to the page, although one can seriously question how well anyone can assess the percentage of their own skill in a subject area.  </p>
+        <p>	Next comes the <b>background</b> section: these are the background colors and <a href="https://www.w3schools.com/css/css3_gradients.asp">gradients</a> with fixes for the older browsers that are used in the header navbar and logo divs. Then the <b>navigation bar</b> section: this was all cut and paste from the assignment, but it basically fixes the navbar at the top, aligns text in center, gives some borders, displays the links inline-block, and assigns style for some CSS <a href="https://www.w3schools.com/css/css_pseudo_classes.asp">pseudo-classes</a> like <b>a:hover</b> and <b>a: selected.</b> The next two sections are for the table and the comment form: not much to say about these. </p>
+        <p>	An important section is that of the <b>fixes</b>: it includes a global fix for the <b>box-sizing</b> property: it resets the box-sizing property to border-box.  This prevents padding and margins from adding to the size of an element. Also included in this section are the styles for the <a href="https://css-tricks.com/all-about-floats/">clearfix</a>: the clearfix forces an element to self-clear its children and is used in float layouts.  To show how effective this fix is I was having problems getting things to float, then I noticed I had miss-typed “clearfix”. In addition, I was trying to float columns that weren’t in the same wrapper (this was pointed out by a friend and a Flatiron fellow student).  Once I corrected both those errors the columns floated like a charm!  </p>
+        <p>	The next CSS section sets up the style for my two column <b>layout.</b> There is a small section to style the <b>sections</b>.  Then one of my favorite CSS tricks is used in the section for the <b>social icons:</b> here I used some <a href="https://www.w3schools.com/css/css_image_sprites.asp">sprite rollovers</a>. Is it too geeky to say how much I love these things? A sprite image is a collection of smaller images put into a single large image. Here, the smaller images are icons for the various social media sites with a regular and hover variation for each one. The CSS <b>background-position</b> can then be used to reposition the image to show the correct state within the element.  I was elated when I got these to work on my page! </p>
+        <p>	The final sections were for my logo, footer, and media queries.  In addition, I added a separate page for my media queries which created the responsive design for the site. I wanted to go over each of my pages, but this post is getting ridiculously long. So let’s sum it up: </p>
+        <p>Here are the most important things I learned:</p>
+        <ul>
+          <li>a single typo in your code can horribly mess up an entire page or even an entire site… type carefully, cut & paste carefully ,and use validators when you can’t find the error.</li>
+          <li>comment your code as much as possible, so you understand why you did things the way you did much later.</li>
+          <li>use more planning up front and not plan as you go.</li>
+          <li>using responsive design isn’t nearly as hard as it sounds: using the <a href="https://developers.google.com/web/tools/chrome-devtools/">development tools</a> in the browser help show where it the breakpoints are on your pages (although note I still have a problem with the comment form on the Media page and need guidance in correcting it).</li>
+          <li>understanding how to use the command line is imperative.</li>
+        </ul>
+        <p>What did I enjoy the most?</p>
+        <ul>
+          <li>a navigation bar that works can be a thing of beauty.</li>
+          <li>sprite rollovers are da’ bomb!</li>
+          <li>creating websites yourself gives you a sense of control over your own content and ensures that every action is considered.</li>
+          <li>learning how to use Git and GitHub was oddly gratifying and made me feel part of a larger web development community.</li>(See my post on <a href="https://gorgonster.wordpress.com/2016/01/17/getting-git-and-github-2/">GitHub</a> on my Wordpress blog!)
+        </ul>
+      </article>
 
       <article class="blogpost">
         <header>
