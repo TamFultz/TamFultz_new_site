@@ -99,7 +99,7 @@ img {
 }
 
 /* Make sure that padding behaves as expected */
-* {box-sizing:border-box}
+* {box-sizing: border-box}
 
 /* Container for skill bars */
 .container {
@@ -196,6 +196,13 @@ img {
   display: none;
 }
 
+/* /////// FAV LINKS ////// */
+
+.links {
+  border: 1px solid;
+  padding: 1px;
+}
+
 /* /////// CAT TABLE WITH BORDERS ////// */
 
 table, th, td {
@@ -205,7 +212,7 @@ table, th, td {
 /* Give table padding */
 
 th, td {
-    padding: 15px;
+    padding: 5px;
     text-align: left;
 }
 
@@ -224,7 +231,7 @@ th, td {
 /* ///////// COMMENT FORM WITH BORDERS ///////// */
 
 #comment-form {
-  width: 30%;
+  width: 28%;
 }
 
 #comment-form form {
@@ -234,7 +241,7 @@ th, td {
 /* Give form padding */
 
 #comment-form form {
-  padding: 20px;
+  padding: 10px;
 }
 
 #comment-form p, input, textarea {
@@ -251,28 +258,24 @@ th, td {
 }
 
 .clearfix:after {
+  clear: both;
   content: ".";
   display: block;
-  clear: both;
-  visibility: hidden;
   height: 0;
   line-height: 0;
-}
-
-.clearfix {
-  clear:both;
+  visibility: hidden;
 }
 
 /* //////// LAYOUT ///////// */
 
 .wrapper {
-  width: 960px;
+  width: 1024px;
   margin: 0 auto;
 }
 
 .col-1 {
   float: left;
-  width: 64%;
+  width: 60%;
 }
 
 .col-2 {
@@ -280,12 +283,27 @@ th, td {
   width: 30%;
 }
 
-[class*="col-"] {
-  margin-left: 2%;
+.medcol-1 {
+  float: left;
+  width: 22%;
+}
+
+.medcol-2 {
+  float: left;
+  width: 22%;
+}
+
+.medcol-3 {
+  float: right;
+  width: 42%;
 }
 
 .first {
   margin-left: 0%;
+}
+
+[class*="col-"] {
+  margin-left: 2%;
 }
 
 /* //////// SECTIONS ///////// */
@@ -295,7 +313,7 @@ header {
 }
 
 section {
-  padding: 30px;
+  padding: 25px;
   margin-bottom: 20px;
 }
 
@@ -371,7 +389,7 @@ footer {
   font-size: 0.75em;
   padding: 10px;
   border-top: 1px solid;
-  clear: right;
+  clear: both;
 }
 
 /*///////// MEDIA QUERIES ////////*/
