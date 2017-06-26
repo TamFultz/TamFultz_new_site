@@ -196,12 +196,27 @@ img {
   display: none;
 }
 
+/* /////// FAV MUS Section ///// */
+
+.favmus {
+  padding: 1px;
+}
+
+/* /////// FAV Videos ////// */
+
+.vids {
+  border: 1px;
+  margin-bottom: 20px;
+}
+
 /* /////// FAV LINKS ////// */
 
 .links {
   border: 1px solid;
   padding: 1px;
+  margin-bottom: 20px;
 }
+
 
 /* /////// CAT TABLE WITH BORDERS ////// */
 
@@ -231,7 +246,7 @@ th, td {
 /* ///////// COMMENT FORM WITH BORDERS ///////// */
 
 #comment-form {
-  width: 28%;
+clear: both;
 }
 
 #comment-form form {
@@ -285,17 +300,17 @@ th, td {
 
 .medcol-1 {
   float: left;
-  width: 22%;
+  width: 28%;
 }
 
 .medcol-2 {
   float: left;
-  width: 22%;
+  width: 34%;
 }
 
 .medcol-3 {
-  float: right;
-  width: 42%;
+  float: left;
+  width: 28%;
 }
 
 .first {
