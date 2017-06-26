@@ -44,7 +44,7 @@ img, form, input, table, video, audio, iframe {
     font-size: 0.9em;
 }
 
-  .col-1, .col-2, .medcol-1, .medcol-2 {
+  .col-1, .col-2, .medcol-1, .medcol-2, .medcol-3 {
     width: 100%;
     margin-left: 0;
     float: none;
